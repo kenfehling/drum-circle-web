@@ -1,0 +1,83 @@
+.player.blue, table#grid.blue td.active {
+    background-color: #9CF;
+    border-color: #36C;
+}
+
+.blue .sequencer-button.active.on {
+    box-shadow: 0 0 10px #9CF;
+}
+
+.player.blue.disconnected {
+    background-color: #4d6680;
+    border-color: #1a3366;
+}
+
+.player.red, table#grid.red td.active {
+    background-color: #F77;
+    border-color: #900;
+}
+
+.red .sequencer-button.active.on {
+    box-shadow: 0 0 10px #F77;
+}
+
+.player.red.disconnected {
+    background-color: #803c3c;
+    border-color: #4d0000;
+}
+
+.player.green, table#grid.green td.active {
+    background-color: #8F8;
+    border-color: #090;
+}
+
+.green .sequencer-button.active.on {
+    box-shadow: 0 0 10px #8F8;
+}
+
+.player.green.disconnected {
+    background-color: #458045;
+    border-color: #004d00;
+}
+
+.player.yellow, table#grid.yellow td.active {
+    background-color: #FF4;
+    border-color: #990;
+}
+
+.yellow .sequencer-button.active.on {
+    box-shadow: 0 0 10px #FF4;
+}
+
+.player.yellow.disconnected {
+    background-color: #808022;
+    border-color: #4d4d00;
+}
+
+.player.purple, table#grid.purple td.active {
+    background-color: #A9D;
+    border-color: #86B;
+}
+
+.purple .sequencer-button.active.on {
+    box-shadow: 0 0 10px #A9D;
+}
+
+.player.purple.disconnected {
+    background-color: #665580;
+    border-color: #45345e;
+}
+
+.player.orange, table#grid.orange td.active {
+    background-color: #FA4;
+    border-color: #960;
+}
+
+.orange .sequencer-button.active.on {
+    box-shadow: 0 0 10px #FA4;
+}
+
+.player.orange.disconnected {
+    background-color: #805522;
+    border-color: #4d3200;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drum Circle - Joining Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="Drum circle HTML 5 game">
+    <meta name="keywords" content="music, drum circle, game, html5, html 5">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="js/lib/require.js"></script>
+    <script>
+        //Load common code that includes config, then load the app
+        //logic for this page. Do the require calls here instead of
+        //a separate file so after a build there are only 2 HTTP
+        //requests instead of three.
+        require(['./js/common'], function (common) {
+            //js/common sets the baseUrl to be js/ so
+            //can just ask for 'app/main1' here instead
+            //of 'js/app/main1'
+            require(['app/pages/join_game']);
+        });
+    </script>
+    <link rel="stylesheet" href="js/lib/alertify-themes/alertify.core.css">
+    <link rel="stylesheet" href="js/lib/alertify-themes/alertify.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/player_colors.css">
+    <link rel="stylesheet" href="css/circle_placement.css">
+</head>
+<body>
+<div class="semi-transparent">
+    <div id="message">Take your place in the circle</div>
+    <br>
+    <table id="grid"></table>
+</div>
+<div id="footer">
+    <div id="debug-div"></div>
+    Requires Google Chrome
+</div>
+</body>
+</html>

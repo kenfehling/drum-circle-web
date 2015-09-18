@@ -1,0 +1,10 @@
+#message {
+    margin-top: 24px;
+}
+
+#grid {
+    margin: 15px auto 2px auto;
+    table-layout: fixed;
+    width: 240px;
+    height: 180px;
+}

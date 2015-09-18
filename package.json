@@ -1,0 +1,53 @@
+{
+  "name": "drum-circle",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "body-parser": "1.8.x",
+    "drum-circle-library": "git+https://github.com/kenfehling/drum-circle-library.git",
+    "ejs": "^1.0.0",
+    "express": "4.x",
+    "grunt": "^0.4.5",
+    "grunt-requirejs": "^0.4.2",
+    "lodash": "2.4.x",
+    "newrelic": "1.5.x",
+    "pubsub-js": "git+https://github.com/kenfehling/PubSubJS.git",
+    "restler": "3.2.x",
+    "serve-favicon": "2.1.x"
+  },
+  "devDependencies": {
+    "almond": "^0.3.0",
+    "amdefine": ">=0.1.0",
+    "chai": "^1.9.1",
+    "javascript-state-machine": "git+https://github.com/QuentinRoy/javascript-state-machine.git#muti_wildcard",
+    "mocha": "^1.21.4",
+    "require-uncached": "^1.0.2",
+    "hippie": "^0.3.0",
+    "sinon": "^1.10.3"
+  },
+  "volo": {
+    "baseUrl": "public/js/lib",
+    "dependencies": {
+      "jquery": "github:jquery/jquery/2.1.1",
+      "jquery-browser-plugin": "github:gabceb/jquery-browser-plugin/v0.0.6#dist/jquery.browser.min.js",
+      "jcanvas": "github:caleb531/jcanvas/14.07.04#jcanvas.min.js",
+      "lodash": "github:lodash/lodash/2.4.1#dist/lodash.min.js",
+      "processing-js": "github:jeresig/processing-js/v1.4.0#processing.js",
+      "alertify": "github:fabien-d/alertify.js/0.3.11#lib/alertify.min.js",
+      "alertify-themes": "github:fabien-d/alertify.js/0.3.11#themes",
+      "tuna": "github:Dinahmoe/tuna/master",
+      "drum-circle-library": "github:kenfehling/drum-circle-library/master",
+      "Snap.svg": "github:adobe-webplatform/Snap.svg/v0.3.0",
+      "pubsub-js": "github:kenfehling/PubSubJS/master",
+      "javascript-state-machine": "github:QuentinRoy/javascript-state-machine/muti_wildcard#state-machine.min.js",
+      "paper": "github:paperjs/paper.js/v0.9.20#dist/paper-full.min.js",
+      "adsr": "github:mmckegg/adsr/v0.1.1"
+    }
+  }
+}

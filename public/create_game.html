@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drum Circle - Create Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="Drum circle HTML 5 game">
+    <meta name="keywords" content="music, drum circle, game, html5, html 5">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="js/lib/require.js"></script>
+    <script>
+        //Load common code that includes config, then load the app
+        //logic for this page. Do the require calls here instead of
+        //a separate file so after a build there are only 2 HTTP
+        //requests instead of three.
+        require(['./js/common'], function (common) {
+            //js/common sets the baseUrl to be js/ so
+            //can just ask for 'app/main1' here instead
+            //of 'js/app/main1'
+            require(['app/pages/create_game']);
+        });
+    </script>
+    <link rel="stylesheet" href="js/lib/alertify-themes/alertify.core.css">
+    <link rel="stylesheet" href="js/lib/alertify-themes/alertify.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/player_colors.css">
+    <link rel="stylesheet" href="css/create_game.css">
+</head>
+<body>
+<form class="semi-transparent" method="POST" action="/start-game">
+    <p id="give-code">Give this code to your friends:</p>
+    <h1 id="game-code" class="important">CODE</h1>
+    <input type="hidden" id="code" name="code" />
+    Or send them this address:
+    <a id="join-game-url"></a>
+    <div id="players-joined-label">Players joined</div>
+    <div id="players"></div>
+    <label for="tempo">Tempo:</label>
+    <select id="tempo" name="tempo"></select>
+    <br>
+    <label for="drum_kit">Drum kit:</label>
+    <select id="drum_kit" name="drum_kit"></select>
+    <br>
+    <input type="hidden" id="drum" name="drum" />
+    <input type="hidden" id="color" name="color" />
+    <input type="hidden" id="running" name="running" value="1" />
+    <input type="submit" value="Start game now" disabled="disabled">
+</form>
+<div id="footer">
+    <div id="debug-div"></div>
+    Requires Google Chrome
+</div>
+</body>
+</html>

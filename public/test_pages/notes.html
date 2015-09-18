@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuddle Time Drum Circle Project Notes</title>
+    <style>
+        li { margin-top: 5px; margin-bottom: 12px }
+        li ul li { margin-bottom: 0 }
+    </style>
+</head>
+<body>
+<h2 id="browser_compatibility">Browser compatibility</h2>
+<ul>
+    <li>
+        URL hash parameters on redirect
+        <ul>
+            <li>Safari drops all of the hash parameters on both desktop and mobile</li>
+        </ul>
+    </li>
+    <li>
+        Web Audio API: used for background synth -
+        <a href="http://caniuse.com/#feat=audio-api">compatibility</a>
+        <ul>
+            <li>Many API differences in Firefox, currently the project doesn't support it</li>
+            <li>Some API differences between Safari and Chrome, so far they've been smoothed over</li>
+        </ul>
+    </li>
+    <li>
+        WebSocket support suggested by not required -
+        <a href="http://caniuse.com/#feat=websockets">compatibility</a>
+    </li>
+    <li>
+        Audio format support
+        <ul>
+            <li>All current major browsers except Opera support MP3</li>
+        </ul>
+    </li>
+    <li>
+        <b>Conclusion</b>
+        <ul>
+            <li><b>Only Chrome is supported</b></li>
+        </ul>
+    </li>
+</ul>
+<!--
+<h2>Buzzwords</h2>
+HTML 5,
+-->
+</body>
+</html>

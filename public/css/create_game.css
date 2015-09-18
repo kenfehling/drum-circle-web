@@ -1,0 +1,33 @@
+h2 {
+    margin-top: 16px;
+    margin-bottom: 2px;
+}
+
+#give-code {
+    margin-top: 7px;
+    margin-bottom: 9px;
+}
+
+#game-code {
+    margin-bottom: 10px;
+}
+
+#join-game-url {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+
+#players-joined-label {
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 4px;
+}
+
+#players {
+    display: inline-block;
+    width: 284px;
+    height: 32px;
+    border: thin solid rgba(0, 0, 0, 0.67);
+    margin-bottom: 10px;
+    padding: 10px 0;
+}

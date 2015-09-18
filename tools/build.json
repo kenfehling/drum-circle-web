@@ -1,0 +1,47 @@
+({
+    "appDir": "public",
+    "mainConfigFile": "public/js/common.js",
+    "dir": "public-built",
+    "modules": [
+    {
+        "name": "../common",
+        "include": [
+            "app/debug/console_redirect",
+            "app/ui/browser_warning",
+            "app/ui/tempo_select",
+            "app/ui/drum_select",
+            "app/ui/effects",
+            "app/ui/arrows",
+            "app/ui/pause_on_tab_away",
+            "app/beat_controller",
+            "app/drums",
+            "app/step_sequencer",
+            "app/audio_initializer",
+            "app/synth_controller",
+            "app/time_synchronizer",
+            "app/gyro_effects",
+            "app/url_model_populator"
+        ]
+    },
+    {
+        "name": "app/pages/index",
+        "exclude": ["../common"]
+    },
+    {
+        "name": "app/pages/open_session",
+        "exclude": ["../common"]
+    },
+    {
+        "name": "app/pages/create_game",
+        "exclude": ["../common"]
+    },
+    {
+        "name": "app/pages/join_game",
+        "exclude": ["../common"]
+    },
+    {
+        "name": "app/pages/game",
+        "exclude": ["../common"]
+    }
+]
+})

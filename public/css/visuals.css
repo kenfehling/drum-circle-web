@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+canvas#myCanvas {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#set-params-link {
+    position: absolute;
+    z-index: 2;
+    color: #69F;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}

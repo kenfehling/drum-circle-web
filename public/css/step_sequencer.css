@@ -1,0 +1,29 @@
+table#grid {
+    margin: auto;
+    border-spacing: 3px;
+    border-collapse: separate;
+}
+
+.sequencer-button {
+    width: 64px;
+    height: 62px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.sequencer-button.on {
+    background-color: #000;
+}
+
+table#grid td {
+    border-radius: 4px;
+}
+
+table#grid td.active {
+    background-color: #AAA;
+    opacity: 0.667;
+}
+
+table#grid td.active.on {
+    opacity: 1.0;
+}
