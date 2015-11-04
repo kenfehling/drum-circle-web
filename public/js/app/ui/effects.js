@@ -1,5 +1,5 @@
 /**
- * The logic that sits behind the game room UI.
+ * The logic that sits behind the effect select UI.
  * Author: Ken Fehling
  */
 
